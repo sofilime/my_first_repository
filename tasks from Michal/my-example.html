@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background: lightgrey;
+        }
+
+        .flexbox-container {
+            max-width: 1200px;
+
+            margin: 150px auto;
+        }
+
+        .flex-item {
+            flex-basis: 30%;
+            padding: 10px 20px;
+            box-sizing: border-box;
+
+            font-style: italic;
+
+            margin-bottom: 40px;
+
+        }
+
+        .flex-item:nth-child(1) {
+            background-color: indianred;
+        }
+
+        .flex-item:nth-child(2) {
+            background-color: lightgreen;
+        }
+
+        .flex-item:nth-child(3) {
+            background-color: lightseagreen;
+
+        }
+
+        @media (min-width: 900px) {
+            .flexbox-container {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="flexbox-container">
+    <div class="flex-item">
+        <h1>Heading</h1>
+        <p>This relies on the fact a margin set to `auto` in a flex container absorb extra space. So setting a vertical
+            margin of auto will make the item perfectly centered in both axis.
+
+            Now let's use some more properties. Consider a list of 6 items, all with a fixed dimensions in a matter of
+            aesthetics but they could be auto-sized. We want them to be evenly and nicely distributed on the horizontal
+            axis so that when we resize the browser, everything is fine (without media queries!).</p>
+    </div>
+    <div class="flex-item"><h1>Heading</h1>
+        <p>This relies on the fact a margin set to `auto` in a flex container absorb extra space. .</p>
+    </div>
+    <div class="flex-item"><h1>Heading</h1>
+        <p>This relies on the fact a margin set to `auto` in a flex container absorb extra space. So setting a vertical
+            margin of auto will make the item perfectly centered in both axis.
+        </p></div>
+</div>
+</body>
+</html>
+</body>
+</html>
