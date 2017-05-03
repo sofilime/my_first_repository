@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background: lightgrey;
+        }
+
+        .flexbox-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            max-width: 1000px;
+            height: 300px;
+
+            border-style: inset;
+            border-color:darkgrey;
+            border-spacing: inherit;
+            border-width: 2px;
+
+            margin: 150px auto;
+            padding: 0 20px;
+
+            background: antiquewhite;
+        }
+
+        .flex-item {
+            width: 45px;
+
+            border: 1px rgba(0, 0, 0, 0.15) solid;
+            border-bottom: 0;
+
+            box-shadow: 3px -1px 5px rgba(0,0,0,1);
+
+        }
+
+        .flex-item:nth-child(1) {
+            background-color: red;
+            height: 190px;
+        }
+
+        .flex-item:nth-child(2) {
+            background-color: green;
+            height: 220px;
+        }
+
+        .flex-item:nth-child(3) {
+            background-color: blue;
+            height: 100px;
+        }
+
+        .flex-item:nth-child(4) {
+            background-color: orange;
+            height: 250px;
+        }
+
+        .flex-item:nth-child(5) {
+            background-color: white;
+            height: 100px;
+        }
+
+        .flex-item:nth-child(6) {
+            background-color: blueviolet;
+            height: 220px;
+        }
+
+        .flex-item:nth-child(7) {
+            background-color: firebrick;
+            height: 200px;
+        }
+
+        .flex-item:nth-child(8) {
+            background-color: green;
+            height: 270px;
+        }
+
+        .flex-item:nth-child(9) {
+            background-color: violet;
+            height: 170px;
+        }
+
+        .flex-item:nth-child(10) {
+            background-color: firebrick;
+            height: 270px;
+        }
+
+        .flex-item:nth-child(11) {
+            background-color: violet;
+            height: 170px;
+        }
+    </style>
+</head>
+<body>
+<div class="flexbox-container">
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+</div>
+</body>
+</html>
