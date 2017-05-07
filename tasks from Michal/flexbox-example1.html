@@ -37,6 +37,11 @@
             box-shadow: 3px -1px 5px rgba(0,0,0,1);
 
             position: relative;
+            animation-name: example;
+            animation-duration: 4s;
+
+        }
+        .flex-item:hover{
 
         }
 
@@ -58,6 +63,13 @@
             text-shadow: 3px 2px 4px rgba(0,0,0,0.3);
             font-size: 45px;
             font-family: 'Fontdiner Swanky', cursive;
+        }
+        span{
+            position: absolute;
+            display: block;
+            top: -22px;
+            left: 20%;
+            font-weight: bold;
         }
 
 
@@ -130,17 +142,17 @@
 <body>
 <h1>Hi, I am the sexiest heading you've ever seen.<br>You won't forget me anyway.</h1>
 <div class="flexbox-container">
-    <div class="flex-item bgc-red"><h2>I love this block</h2></div>
-    <div class="flex-item bgc-green"><h2>I love this block</h2></div>
-    <div class="flex-item bgc-blue"><h2>I love this block</h2></div>
-    <div class="flex-item bgc-orange"><h2>I love this block</h2></div>
-    <div class="flex-item bgc-white"><h2>I love this block</h2></div>
-    <div class="flex-item bgc-blueviolet"><h2>I love this block</h2></div>
-    <div class="flex-item bgc-firebrick"><h2>I love this block</h2></div>
-    <div class="flex-item bgc-green"><h2>I love this block</h2></div>
-    <div class="flex-item bgc-violet"><h2>I love this block</h2></div>
-    <div class="flex-item bgc-firebrick"><h2>I love this block</h2></div>
-    <div class="flex-item bgc-violet"><h2>I love this block</h2></div>
+    <div class="flex-item bgc-red"><span>70%</span><h2>I love this block</h2></div>
+    <div class="flex-item bgc-green"><span>80%</span><h2>I love this block</h2></div>
+    <div class="flex-item bgc-blue"><span>30%</span><h2>I love this block</h2></div>
+    <div class="flex-item bgc-orange"><span>90%</span><h2>I love this block</h2></div>
+    <div class="flex-item bgc-white"><span>60%</span><h2>I love this block</h2></div>
+    <div class="flex-item bgc-blueviolet"><span>40%</span><h2>I love this block</h2></div>
+    <div class="flex-item bgc-firebrick"><span>60%</span><h2>I love this block</h2></div>
+    <div class="flex-item bgc-green"><span>95%</span><h2>I love this block</h2></div>
+    <div class="flex-item bgc-violet"><span>60%</span><h2>I love this block</h2></div>
+    <div class="flex-item bgc-firebrick"><span>90%</span><h2>I love this block</h2></div>
+    <div class="flex-item bgc-violet"><span>80%</span><h2>I love this block</h2></div>
 </div>
 </body>
 </html>
