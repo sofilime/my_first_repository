@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky" rel="stylesheet">
     <style>
         body {
             background: lightgrey;
@@ -14,14 +15,14 @@
             align-items: flex-end;
 
             max-width: 1000px;
-            height: 300px;
+            height: 700px;
 
             border-style: inset;
             border-color:darkgrey;
             border-spacing: inherit;
             border-width: 2px;
 
-            margin: 150px auto;
+            margin: 50px auto;
             padding: 0 20px;
 
             background: antiquewhite;
@@ -35,77 +36,111 @@
 
             box-shadow: 3px -1px 5px rgba(0,0,0,1);
 
+            position: relative;
+
         }
 
-        .flex-item:nth-child(1) {
+        .flex-item h2 {
+            transform: rotate(-90deg);
+            line-height: 16px;
+            position: absolute;
+            bottom: -21px;
+            transform-origin: left top 0;
+            width: 1000px;
+            font-style: italic;
+            font-size: 20px;
+            left: 11px;
+        }
+
+        h1 {
+            text-align: center;
+            color: red;
+            text-shadow: 3px 2px 4px rgba(0,0,0,0.3);
+            font-size: 45px;
+            font-family: 'Fontdiner Swanky', cursive;
+        }
+
+
+        @media only screen and (min-width:500px ){
+            .flex-item h2{
+                /*bottom: -138px;*/
+                bottom: -37px;
+                width: 200%;
+                left: 5px;
+            }
+        }
+
+
+        .bgc-red {
             background-color: red;
-            height: 190px;
+            height: 70%;
         }
 
-        .flex-item:nth-child(2) {
+        .bgc-green{
             background-color: green;
-            height: 220px;
+            height: 80%;
         }
 
-        .flex-item:nth-child(3) {
+        .bgc-blue {
             background-color: blue;
-            height: 100px;
+            height: 30%;
         }
 
-        .flex-item:nth-child(4) {
+        .bgc-orange {
             background-color: orange;
-            height: 250px;
+            height: 90%;
         }
 
-        .flex-item:nth-child(5) {
+        .bgc-white {
             background-color: white;
-            height: 100px;
+            height: 60%;
         }
 
-        .flex-item:nth-child(6) {
+        .bgc-blueviolet {
             background-color: blueviolet;
-            height: 220px;
+            height: 40%;
         }
 
-        .flex-item:nth-child(7) {
+        .bgc-firebrick {
             background-color: firebrick;
-            height: 200px;
+            height: 60%;
         }
 
-        .flex-item:nth-child(8) {
+        .bgc-green {
             background-color: green;
-            height: 270px;
+            height: 95%;
         }
 
-        .flex-item:nth-child(9) {
+        .bgc-violet {
             background-color: violet;
-            height: 170px;
+            height: 60%;
         }
 
-        .flex-item:nth-child(10) {
+        .bgc-firebrick {
             background-color: firebrick;
-            height: 270px;
+            height: 90%;
         }
 
-        .flex-item:nth-child(11) {
+        .bgc-violet {
             background-color: violet;
-            height: 170px;
+            height: 80%;
         }
     </style>
 </head>
 <body>
+<h1>Hi, I am the sexiest heading you've ever seen.<br>You won't forget me anyway.</h1>
 <div class="flexbox-container">
-    <div class="flex-item"></div>
-    <div class="flex-item"></div>
-    <div class="flex-item"></div>
-    <div class="flex-item"></div>
-    <div class="flex-item"></div>
-    <div class="flex-item"></div>
-    <div class="flex-item"></div>
-    <div class="flex-item"></div>
-    <div class="flex-item"></div>
-    <div class="flex-item"></div>
-    <div class="flex-item"></div>
+    <div class="flex-item bgc-red"><h2>I love this block</h2></div>
+    <div class="flex-item bgc-green"><h2>I love this block</h2></div>
+    <div class="flex-item bgc-blue"><h2>I love this block</h2></div>
+    <div class="flex-item bgc-orange"><h2>I love this block</h2></div>
+    <div class="flex-item bgc-white"><h2>I love this block</h2></div>
+    <div class="flex-item bgc-blueviolet"><h2>I love this block</h2></div>
+    <div class="flex-item bgc-firebrick"><h2>I love this block</h2></div>
+    <div class="flex-item bgc-green"><h2>I love this block</h2></div>
+    <div class="flex-item bgc-violet"><h2>I love this block</h2></div>
+    <div class="flex-item bgc-firebrick"><h2>I love this block</h2></div>
+    <div class="flex-item bgc-violet"><h2>I love this block</h2></div>
 </div>
 </body>
 </html>
