@@ -1,52 +1,358 @@
-.navbar-default .navbar-nav>.active>a{
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+.btn-danger{
+    background: darkorange;
+    color: #000;
+}
+.btn-danger:hover{
+    background: rgba(255, 140, 0, 0.71);
+    color: #000;
+    box-shadow: 0px 0px 3px rgba(0,0,0,.6);
+}
+
+.navbar-static-top, .navbar-fixed-top, .navbar-fixed-bottom {
+    background: darkorange;
+
+
+}
+
+.navbar-default .navbar-nav > .active > a {
     background-color: transparent;
     background-image: none;
-    box-shadow:none;
+    box-shadow: none;
 }
-.navbar-brand{
+
+.navbar-brand {
     padding: 0;
 }
-.navbar-brand > img{
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-brand > img {
     height: 50px;
 }
 
-/**/
-.main-container{
-    margin-top: 120px;
+.navbar-default .navbar-nav > li > a {
+    color: white;
 }
-img{
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: white;
+    background-color: lightsalmon;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: white;
+    background-color: lightsalmon;
+}
+
+/**/
+.main-container {
+    margin-top: 35px;
+}
+
+img {
     max-width: 100%;
 }
+h1 ,h2{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 46px;
+}
+h4{
+    font-family: 'Chewy', cursive;
+    font-weight: bold;
+    font-size: 28px;
+}
+
 h1, h2, h3, h4, p, i {
     text-align: center;
 }
-.fa{
-    display: block;
+/*Section 3*/
+
+.section-3-wrap {
+    padding-top: 120px;
+    padding-bottom: 40px;
+    background-color: gold;
 }
-.row.section-4 {
+
+/*Section 4*/
+
+.section-4 {
     margin-top: 60px;
 }
-.text-on-sec-4{
+.section-4 .col-md-3 {
+    margin-bottom: 50px;
+}
+
+.text-on-sec-4 {
     margin-bottom: 60px;
 }
-.icon i{
-    font-size: 24px;
-    color:red;
+
+/*Icons*/
+
+.section-5 .icon{
+    margin-bottom: 20px;
 }
-.btn-section-3{
+.section-5 .icon i {
+    display: block
+;
+    font-size: 38px;
+    color: red;
+
+    transition: all 0.4s ease-in-out;
+}
+.section-5 .icon a{
+    display: block;
+}
+.section-5 .icon a:hover{
+    text-decoration: none;
+}
+.section-5 .icon i:hover{
+    color: darkorange;
+
+    transform: scale(1.2);
+    transition: all 0.4s ease-in-out;
+}
+
+/*Button*/
+
+.btn-section-3 {
     padding: 7px 70px;
     margin-top: 30px;
+
+    text-transform: uppercase;
+
+    border-radius: 0;
+    border: 0;
+    border-color: transparent;
 }
-.img-wrap{
+
+/*Images*/
+
+.img-wrap {
     margin-top: 60px;
 }
-.img-wrap > img{
+
+.img-wrap > img {
     display: block;
     width: 70%;
     margin: 0 auto;
 }
-footer{
-    margin-top: 60px;
-    padding: 70px 0 70px;
-    background: lightgrey;
+
+
+.footer-distributed{
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    font: bold 16px sans-serif;
+    text-align: left;
+
+    padding: 50px 60px 40px;
+    margin-top: 80px;
+    overflow: hidden;
 }
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+    float: left;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+    color:  #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0 0 10px;
+}
+
+.footer-distributed h3 span{
+    color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+    color:  #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
+}
+
+.footer-distributed .footer-links a{
+    display:inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color:  inherit;
+    margin-right: 8px;
+}
+
+.footer-distributed .footer-company-name{
+    color:  #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer social icons */
+
+.footer-distributed .footer-icons{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.footer-distributed .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color:  #33383b;
+    border-radius: 2px;
+
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+.footer-distributed .footer-icons a i {
+    line-height: 35px;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+    float: right;
+}
+
+.footer-distributed .footer-right p{
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px 42px 0 0;
+    color: #ffffff;
+}
+
+/* The contact form */
+
+.footer-distributed form{
+    display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea{
+    display: block;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color:  #1f2022;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+
+    font: inherit;
+    font-size: 14px;
+    font-weight: normal;
+    color:  #d1d2d2;
+
+    width: 400px;
+    padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+    color:  #5c666b;
+}
+
+.footer-distributed ::-moz-placeholder {
+    color:  #5c666b;
+    opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder{
+    color:  #5c666b;
+}
+
+
+.footer-distributed form input{
+    height: 55px;
+    margin-bottom: 15px;
+}
+
+.footer-distributed form textarea{
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.footer-distributed form button{
+    border-radius: 3px;
+    background-color:  #33383b;
+    color: #ffffff;
+    border: 0;
+    padding: 15px 50px;
+    font-weight: bold;
+    float: right;
+}
+
+
+@media (max-width: 1000px) {
+
+    .footer-distributed {
+        font: bold 14px sans-serif;
+    }
+
+    .footer-distributed .footer-company-name{
+        font-size: 12px;
+    }
+
+    .footer-distributed form input,
+    .footer-distributed form textarea{
+        width: 250px;
+    }
+
+    .footer-distributed form button{
+        padding: 10px 35px;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .footer-distributed{
+        padding: 30px;
+    }
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-right{
+        float: none;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .footer-distributed .footer-left{
+        margin-bottom: 40px;
+    }
+
+    .footer-distributed form{
+        margin-top: 30px;
+    }
+
+    .footer-distributed form{
+        display: block;
+    }
+
+    .footer-distributed form button{
+        float: none;
+    }
+}
+
