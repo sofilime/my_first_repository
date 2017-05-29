@@ -1,6 +1,8 @@
 body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
+}
+nav{
+    font-family: 'Love Ya Like A Sister', cursive;
 }
 
 .btn-danger {
@@ -12,6 +14,9 @@ body {
     background: rgba(255, 140, 0, 0.71);
     color: #000;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, .6);
+}
+.footer-distributed .footer-icons a:hover{
+    background: darkorange;
 }
 
 .navbar-static-top, .navbar-fixed-top, .navbar-fixed-bottom {
@@ -63,7 +68,15 @@ body {
     color: #000;
     background-color: lightsalmon;
 }
-
+/*logo*/
+.navbar-brand  h3 {
+    color: #ffffff;
+    font: normal 30px 'Cookie', cursive;
+    margin: 0 0 10px 15px;
+}
+.navbar-brand span {
+    color: #5383d3;
+}
 /**/
 .main-container {
     margin-top: 35px;
@@ -76,6 +89,9 @@ img {
 h1, h2 {
     font-family: 'Patrick Hand', cursive;
     font-size: 46px;
+    font-family: 'Chewy', cursive;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 h4 {
